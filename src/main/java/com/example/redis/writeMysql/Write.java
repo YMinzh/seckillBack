@@ -1,6 +1,6 @@
-package com.example.redisDemo.writeMysql;
+package com.example.redis.writeMysql;
 
-import com.example.redisDemo.mapper.SeckillMapper;
+import com.example.redis.mapper.SeckillMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableAsync;
 

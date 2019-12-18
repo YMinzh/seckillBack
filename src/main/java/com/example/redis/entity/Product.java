@@ -1,17 +1,20 @@
-package com.example.redisDemo.entity;
+package com.example.redis.entity;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class Product {
+public class Product implements Serializable {
     private long id;
     private String name;
     private Date startTime;
     private Date endTime;
-    private int num;
+    private long num;
     private BigDecimal money;
     private BigDecimal originPrice;
     private int status;
+
+    private static final long serialVersionUID = 1L;
 
     @Override
     public String toString() {
@@ -75,11 +78,11 @@ public class Product {
         this.startTime = startTime;
     }
 
-    public int getNum() {
+    public long getNum() {
         return num;
     }
 
-    public void setNum(int num) {
+    public void setNum(long num) {
         this.num = num;
     }
 
@@ -97,6 +100,8 @@ public class Product {
         this.num = num;
         this.money = money;
     }
+
+
 
     public Product() {
     }

@@ -1,11 +1,9 @@
-package com.example.redisDemo.entity;
+package com.example.redis.entity;
 
-import java.util.List;
-
-public class Users {
+public class Order {
     private long id;
     private long proId;
-    private long users;
+    private long userId;
 
     public long getId() {
         return id;
@@ -23,11 +21,11 @@ public class Users {
         this.proId = proId;
     }
 
-    public long getUsers() {
-        return users;
+    public long getUserId() {
+        return userId;
     }
 
-    public void setUsers(long users) {
-        this.users = users;
+    public void setUserId(long users) {
+        this.userId = users;
     }
 }

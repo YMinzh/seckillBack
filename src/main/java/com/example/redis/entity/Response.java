@@ -1,4 +1,4 @@
-package com.example.redisDemo.entity;
+package com.example.redis.entity;
 
 public class Response {
     private int code;

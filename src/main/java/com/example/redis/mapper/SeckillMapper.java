@@ -1,6 +1,6 @@
-package com.example.redisDemo.mapper;
+package com.example.redis.mapper;
 
-import com.example.redisDemo.entity.Product;
+import com.example.redis.entity.Product;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
@@ -22,4 +22,9 @@ public interface SeckillMapper {
 
     @Update("update product set status = #{status} where id = #{id}")
     void update(Product product);
+
+    @Update("update product set num = num - 1 where id = #{id}")
+    void updateNum(long id);
+
+
 }
